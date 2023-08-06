@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutDetalles"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_200"
+    tools:context=".listaProductos">
+
+    <LinearLayout
+        android:layout_width="150pt"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10pt"
+        android:layout_marginTop="20pt"
+        android:background="@drawable/button_rounded"
+        android:textAlignment="center"
+        android:visibility="gone">
+
+        <SearchView
+            android:id="@+id/srvPedidos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5pt"
+            android:padding="2pt"
+            android:text="Datos de Entrega"
+            android:textAlignment="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2pt"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre cliente:  " />
+
+            <TextView
+                android:id="@+id/tvNombreEntregaAdmin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Angel Cachupud Cusin" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2pt"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cedula:  " />
+
+            <TextView
+                android:id="@+id/tvCedulaEntregaAdmin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1724674824" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2pt"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Correo:  " />
+
+            <TextView
+                android:id="@+id/tvCorreoEntregaAdmin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="angelcachupud@gmail.com" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2pt"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Telefono:  " />
+
+            <TextView
+                android:id="@+id/tvTelefonoEntregaAdmin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0998171432" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2pt"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Direccion:  " />
+
+            <TextView
+                android:id="@+id/tvDireccionEntregaAdmin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cayambe Ascazubi y Restauracion " />
+
+            <TextView
+                android:id="@+id/tvLatitudEntregaAdmin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvLongitudEntregaAdmin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnUbicacionEntrega"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:drawableRight="@drawable/location32x32"
+            android:text="Ver Ubicacion"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/layoutMapa"
+            android:layout_width="match_parent"
+            android:layout_height="100pt"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/txtLatitudmy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/txtLongitudmy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.google.android.gms.maps.MapView
+
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="50pt"
+                map:cameraZoom="10"
+                map:uiRotateGestures="true"
+                map:uiZoomControls="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110pt"
+        android:layout_marginBottom="10pt"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Codigo pedido"
+            android:textAlignment="center"
+            android:textSize="10pt"
+            android:textStyle="italic|bold"
+
+            android:visibility="gone" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvItemsPedidos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30pt"
+
+            android:paddingHorizontal="5pt"
+            android:paddingTop="3pt" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="10pt"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total a Pagar $:  " />
+
+            <TextView
+                android:id="@+id/tvTotalPagar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5pt"
+                android:text="12.50"
+                android:textAlignment="viewEnd" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnEnviarPedido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5pt"
+            android:paddingHorizontal="30pt"
+
+            android:text="Notificar como Recibido"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+</FrameLayout>

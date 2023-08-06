@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/itCerrarSesion"
+        android:background="@android:color/holo_orange_light"
+        android:icon="@drawable/delete32x32"
+        android:orderInCategory="100"
+        android:textColor="@color/white"
+        android:title="Cerrar Sesion"
+        app:showAsAction="never" />
+</menu>

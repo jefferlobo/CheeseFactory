@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "721441522931",
+    "firebase_url": "https://cheesefactory-f1dcb-default-rtdb.firebaseio.com",
+    "project_id": "cheesefactory-f1dcb",
+    "storage_bucket": "cheesefactory-f1dcb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:721441522931:android:8eceeaceb5d43c9f5e6386",
+        "android_client_info": {
+          "package_name": "com.example.milkysoft"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "721441522931-pva8ghuret0r61cik9uc67s1mhhps4jc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.milkysoft",
+            "certificate_hash": "6e843625fc61a714970cfb7cf61ba7262b9e4677"
+          }
+        },
+        {
+          "client_id": "721441522931-hdgl7jhqr238olafuuof6937heh3ik6l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsGeAkCaToorUUQzOGn_wfGR6nRsODD4s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "721441522931-94j9ltelgsqdl5n02ieibnvnfgcdr6b9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

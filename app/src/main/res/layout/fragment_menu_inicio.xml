@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".menuInicio"
+
+    android:id="@+id/loyoutMenuInicio">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2pt"
+
+            android:layout_marginTop="33pt"
+            android:background="@color/teal_200">
+
+            <TextView
+                android:layout_width="198dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="20pt"
+                android:padding="2pt"
+                android:text="Menu"
+                android:textAlignment="center"
+                android:textSize="20pt"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@android:color/holo_green_light">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/btnIrproductos"
+                        android:layout_width="match_parent"
+                        android:layout_height="100pt"
+                        android:layout_marginHorizontal="6pt"
+                        android:layout_marginVertical="5pt">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/fondoproductostex"
+                            android:padding="3pt"
+                            android:text="Productos"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="10pt"
+                            android:textStyle="bold" />
+
+                        <ImageButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@color/transparent"
+                            android:src="@drawable/carrito"
+
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30pt"
+                            android:layout_gravity="bottom"
+                            android:background="@drawable/fondouser"
+                            android:padding="2pt"
+                            android:text="Visita nuestro catalogo de productos¡Tenmos algo para ti!"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/btnIrPedidos"
+                        android:layout_width="match_parent"
+                        android:layout_height="100pt"
+                        android:layout_marginHorizontal="6pt"
+                        android:layout_marginVertical="5pt"
+                        android:background="@drawable/fondoproductostex">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="159dp"
+                            android:background="@drawable/fondoproductostex"
+                            android:padding="3pt"
+                            android:text="Pedidos"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="10pt"
+                            android:textStyle="bold" />
+
+                        <ImageButton
+                            android:layout_width="208dp"
+                            android:layout_height="147dp"
+                            android:layout_gravity="center"
+                            android:background="@color/transparent"
+                            android:src="@drawable/pediddos"
+
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30pt"
+                            android:layout_gravity="bottom"
+                            android:background="@drawable/fondouser"
+                            android:padding="2pt"
+                            android:text="No pierdas tiempo realiza  ya tu pedido "
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <Button
+                        android:id="@+id/btnDatalle"
+                        android:layout_width="396dp"
+                        android:layout_height="wrap_content"
+                        android:text="Detalle de pedidos"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:visibility="invisible"
+                        tools:visibility="invisible" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/btnIrUsuarios"
+                        android:layout_width="match_parent"
+                        android:layout_height="100pt"
+                        android:layout_marginHorizontal="6pt"
+                        android:layout_marginVertical="5pt">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="164dp"
+                            android:background="@drawable/fondoproductostex"
+                            android:padding="3pt"
+                            android:text="Usuarios"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="10pt"
+                            android:textStyle="bold" />
+
+                        <ImageButton
+                            android:layout_width="169dp"
+                            android:layout_height="141dp"
+                            android:layout_gravity="center"
+                            android:background="@color/transparent"
+                            android:src="@drawable/trabajando"
+
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30pt"
+                            android:layout_gravity="bottom"
+                            android:background="@drawable/fondouser"
+                            android:padding="2pt"
+                            android:text="Registro de todos los Usuarios"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/btnIrClientes"
+                        android:layout_width="match_parent"
+                        android:layout_height="100pt"
+                        android:layout_marginHorizontal="6pt"
+                        android:layout_marginVertical="5pt"
+                        android:background="@color/black">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="162dp"
+                            android:background="@drawable/fondoproductostex"
+                            android:padding="3pt"
+                            android:text="Clientes"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="10pt"
+                            android:textStyle="bold" />
+
+                        <ImageButton
+                            android:layout_width="162dp"
+                            android:layout_height="118dp"
+                            android:layout_gravity="center"
+                            android:background="@color/transparent"
+                            android:src="@drawable/agregar"
+
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30pt"
+                            android:layout_gravity="bottom"
+                            android:background="@drawable/fondouser"
+                            android:padding="2pt"
+                            android:text="Clientes de la empresa Cheese"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btnRuta"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ruta"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="100pt"
+                        android:layout_marginHorizontal="6pt"
+                        android:layout_marginVertical="5pt"
+                        android:background="@color/white"
+                        android:visibility="visible"
+                        tools:visibility="visible">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="161dp"
+                            android:background="@drawable/fondoproductostex"
+                            android:padding="3pt"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="10pt"
+                            android:textStyle="bold" />
+
+                        <ImageButton
+                            android:layout_width="176dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@color/transparent"
+
+                            android:src="@drawable/entrega" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30pt"
+                            android:layout_gravity="bottom"
+                            android:background="@drawable/fondouser"
+                            android:padding="2pt"
+                            android:text="Genera tu rata por google map"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="100pt"
+                        android:layout_marginHorizontal="6pt"
+                        android:layout_marginVertical="5pt"
+                        android:visibility="invisible"
+                        tools:visibility="invisible">
+
+                        <ImageButton
+                            android:layout_width="151dp"
+                            android:layout_height="94dp"
+                            android:layout_gravity="center"
+                            android:background="@color/transparent"
+
+                            android:src="@drawable/tienda" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="163dp"
+                            android:background="@drawable/fondoproductostex"
+                            android:padding="3pt"
+                            android:text="Productos"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="10pt"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30pt"
+                            android:layout_gravity="bottom"
+                            android:background="@drawable/fondouser"
+                            android:padding="2pt"
+                            android:text="Visita nuestro catalogo de productos¡Tenmos algo para ti!"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+
+                    </com.google.android.material.card.MaterialCardView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+    </LinearLayout>
+
+
+
+</FrameLayout>
